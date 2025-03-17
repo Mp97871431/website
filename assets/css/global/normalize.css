@@ -10,10 +10,10 @@
 }
 
 body,html {
-  background-color: black;
+  background-color: var(--cor-preto);
 }
 
 ::selection {
-  background-color: red;
-  color: white;
+  background-color: var(--cor-azul);
+  color: var(--cor-branco);
 }
