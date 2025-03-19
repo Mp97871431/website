@@ -120,6 +120,8 @@ section.apresentacao .texto h2{
 
  /*responsivo*/
 
+
+
  @media screen and (max-width: 1000px){
   section.apresentacao {
     flex-direction: column;
@@ -133,12 +135,17 @@ section.apresentacao .texto h2{
   section.apresentacao .imagem img{
     border-radius: 15px;
     border: 1px solid var(--cor-azul);
+    width: 350px;
+    margin: 30px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   section.apresentacao .imagem .foto{
     height: 300px;
     background-size: 900px;
-  
   }
   
   section.apresentacao .texto{
@@ -148,10 +155,6 @@ section.apresentacao .texto h2{
   section.apresentacao .texto h1{
   max-width: 200px;
   }
-  
-  section.apresentacao .texto h2{
-  
-   }
   
    section.apresentacao .texto p{
    line-height: 1.5;
@@ -163,10 +166,7 @@ section.apresentacao .texto h2{
     align-items: flex-start;
     margin: 25px 0 30px 0;
    }
-  
-   section.apresentacao .texto .botoes a{
- 
-   }
+
   
    section.apresentacao .texto .botoes a.destaque{
    margin: 10px 0 0 0;
@@ -184,8 +184,6 @@ section.apresentacao .texto h2{
     height: 750px ;
     width: 750px;
    }
-  
-   
  }
 
 
