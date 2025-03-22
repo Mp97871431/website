@@ -121,7 +121,6 @@ section.apresentacao .texto h2{
  /*responsivo*/
 
 
-
  @media screen and (max-width: 1000px){
   section.apresentacao {
     flex-direction: column;
