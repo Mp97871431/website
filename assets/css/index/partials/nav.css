@@ -1,0 +1,58 @@
+nav{
+  display: flex;
+  justify-content: space-between; /*isso serve para deixar cada intem em uma estremidade da nav se tiver tres uma fica em cada ponta e a outra no meio*/
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  height: 90px;
+  padding: 0px, 80px;
+  z-index: 10;
+}
+
+nav img.logo {
+   width: 100%;
+   max-width: 110px;
+}
+
+nav .opcoes a{
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  margin: 0 0 0 50px;
+  transition: all 0.3;
+}
+
+nav .opcoes a:hover {
+  color: var(--cor-azul);
+}
+
+nav .opcoes a.destaque{
+  background-color: var(--cor-azul);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+nav .opcoes a.destaque:hover{
+  background-color: var(--cor-branco);
+}
+
+/* responsaivo */
+
+@media screen and (max-width: 1000px) {
+  nav {
+    height: 70px;
+    padding: 0 30px;
+  }
+
+  nav img.logo{
+     max-width: 80px;
+  }
+
+  nav .opcoes a{
+    display: none;
+  }
+
+  nav .opcoes a.destaque{
+    display: flex;
+    padding: 10px 22px;
+  }
+}
