@@ -1,0 +1,139 @@
+section.comparacao{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ padding: 0 80px 80px 80px;
+ border-top: 1px solid var(--cor-cinza);
+}
+
+section.comparacao .titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 80px 0 80px 0;
+}
+
+section.comparacao .titulo h2{
+ font-size: 2.5em;
+ color: var(--cor-branco);
+}
+
+ section.comparacao .titulo h3{
+  color: var(--cor-branco);
+  margin: 0 0 20px 0;
+ }
+
+ section.comparacao .planilia {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid var(--cor-cinza);
+  border-top: none;
+  border-left: none;
+ }
+
+ section.comparacao .planilia .parte.um {
+  width: 20%;
+ }
+
+ section.comparacao .planilia .parte{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 16%;
+  position: relative;
+  border-left: 1px solid var(--cor-cinza);
+ }
+
+ section.comparacao .planilia .parte h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(46, 159, 224, 0.829);
+  width: 100%;
+  height: 80px;
+  border-top:  1px solid var(--cor-cinza) ;
+ }
+
+ section.comparacao .planilia .parte .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  border-top:  1px solid var(--cor-cinza) ;
+ }
+
+ section.comparacao .planilia .parte:hover h4{
+   color: var(--cor-azul);
+ }
+
+ section.comparacao .planilia .parte:hover .item p{
+  color: var(--cor-azul);
+  opacity: 1;
+ }
+
+ section.comparacao .planilia .parte .item p {
+  color: var(--cor-branco);
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: all 0.3s;
+ }
+
+ section.comparacao .planilia .parte .item img {
+  width: 100%;
+  max-width: 15px;
+  margin: 0 10px 0 0;
+ }
+
+ section.comparacao .planilia .parte h4{
+  position: absolute;
+  color: var(--cor-branco);
+  font-size: 1.3em;
+  top: -40px;
+  transition: all 0.3s;
+ }
+
+ @media screen and (max-width: 1000px) {
+  section.comparacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 50px 0;
+    border-top: 1px solid var(--cor-cinza);
+   }
+
+   section.comparacao .titulo{
+    padding: 60px 30px 30px 0;
+   }
+
+   section.comparacao .titulo h2{
+    font-size: 1em;
+   }
+
+   section.comparacao .planilia{
+    overflow-x: scroll;
+    border-right:none ;
+    padding: 50px 0 0 0;
+   }
+
+   section.comparacao .planilia::-webkit-scrollbar {
+    display: none;
+   }
+
+   section.comparacao .planilia .parte.um{
+    width: 210px;
+    min-width: 210px ;
+    border-left: none ;
+   }
+
+   section.comparacao .planilia .parte {
+    width: 170px;
+    min-width: 170px;
+   }
+ }

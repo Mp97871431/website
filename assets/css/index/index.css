@@ -1,0 +1,19 @@
+@import '../global/global.css';
+
+@import './partials/nav.css';
+
+@import './partials/section-apresentacao.css';
+
+@import './partials/section-faixa.css';
+
+@import './partials/section-produtos.css';
+
+@import './partials/section-pelicula.css';
+
+@import './partials/section-comparacao.css';
+
+@import './partials/section-protecao.css';
+
+@import './partials/section-quemsomos.css';
+
+@import './partials/section-quemusa.css'
